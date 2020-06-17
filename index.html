@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>educationalrc</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--start css styles-->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha256-rByPlHULObEjJ6XQxW/flG2r+22R5dKiAoef+aXWfik=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  <!--end css styles-->
+</head>
+<body>
+
+<!--start preloader-->    
+<div class="loader"></div>
+<!--end preloader-->
+   
+
+
+  <div class="scaleable-wrapper" id="scaleable-wrapper">
+    <div class="very-specific-design" id="very-specific-design">
+      <div class="overlay"></div>
+     <div>
+       <div>
+          <!--start header-->
+          <div class="header">
+            <h1>What’s in the basket? Choose and write.</h1>
+            <div class="help_icons">
+              <img class="resourse_icon icon" src="images/resourse_icon.png" />
+              <img class="help_icon icon" src="images/help_icon.png" />
+            </div>
+          </div>
+          <!--end header-->
+
+          <div class="box-container">
+            <!--start box modal for help-->
+            <div class="popup help_box">
+              <h1>Help Content Goes Here</h1> 
+              <span><img src="images/close_icon.png" /></span>
+            </div>
+            <!--end box modal for help-->
+            <!--start box modal for resourse_box-->
+            <div class="popup resourse_box">
+              <img src="images/dummy.jpg">
+              <span><img src="images/close_icon.png" /></span>
+            </div>
+            <!--end box modal for resourse_box-->
+            <div class="box">
+              <div style="height: 200px;">
+                <div class="items-container"></div>
+                <br><br>
+              </div>
+              <div style="position: relative;margin-top: 20px;">
+                <img class="cart" src="images/p15e11.png" />
+                <audio id="audio1" preload="auto" src="audio/correct.mp3"></audio>
+                <audio id="audio2" preload="auto" src="audio/incorrect.mp3"></audio>    
+                <div class="items-answers"></div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="footer">
+            <div>
+              <img class="icon restart" src="images/replay_icon.png" />
+            <img class="icon show-answer" src="images/showAns_icon.png" />
+            </div>
+          </div>
+       </div>
+     </div>
+     
+     
+    </div>
+  </div>
+
+
+
+<!--start js scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM=" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+<!--end js scripts-->
+</body>
+</html>

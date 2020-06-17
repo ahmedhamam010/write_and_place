@@ -1,0 +1,246 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow);
+body{
+font-family: 'PT Sans Narrow';
+}
+p,h1,h2,ul,body{
+  padding: 0;
+  margin: 0;
+}
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+.header{
+  overflow: hidden;
+  padding: 20px;
+}
+.header h1{
+  float: left;
+  font-weight: 100;
+}
+.header > div{
+  float:right;
+}
+.help_icons img{
+  cursor: pointer;
+}
+.footer{
+  position: relative;
+  background: #deecf6;
+
+}
+.restart{
+  position: absolute;
+    left: 25px;
+    width: 65px;
+    top: 30px;
+    cursor: pointer;
+}
+.show-answer{
+  position: absolute;
+  width: 75px;
+  top: 30px;
+  cursor: pointer;
+}
+.box-container{
+  background-color: #0fa0c5;
+  height: 520px;
+  position: relative;
+}
+.box{
+  width: 95%;
+    margin: auto;
+    border: 3px solid #f5821f;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    height: 540px;
+    position: absolute;
+    top: -10px;
+    left: 2%;
+    z-index: 9;
+}
+.container{
+    max-width: 600px;
+    height: auto;
+    margin: auto;
+}
+.loader{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../images/Preloader_2.gif) 50% 50% no-repeat rgb(255,255,255);
+}
+.items-container{
+    text-align: center;
+    transition: all 500ms ease-in-out;
+    padding: 25px 115px;
+    
+
+}
+.items-container > span{
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  display: inline-block;
+  border: 2px solid #0fa0c5;
+  font-size: 33px;
+  margin: 7px 4px;
+    
+}
+.items-answers{
+  position:absolute;
+  width: 100%;
+}
+.item-answer{
+  margin-bottom: 10px;
+    width: 156px;
+    height: 55px;
+    background: transparent;
+    position: absolute;
+    overflow: hidden;
+    line-height: 55px;
+    padding: 0 20px;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+}
+.item-answer.added{
+  cursor: auto;
+}
+.item-answer > div:nth-child(1) {
+float: left;
+}
+.item-answer > div:nth-child(2) {
+  float: right;
+  }
+.item-answer:nth-child(1){
+  left: 11px;
+  top: -139px;
+}
+.item-answer:nth-child(2){
+  left: 11px;
+  bottom: 18px;
+}
+
+.item-answer:nth-child(3){
+  left: 274px;
+  bottom: 16px;
+}
+.item-answer:nth-child(4){
+  right: 6px;
+  bottom: 74px;
+}
+.item-answer:nth-child(5){
+  right: 6px;
+  bottom: 17px;
+}
+.selected{
+    color: #FFF;
+    background-color:rgb(15, 160, 197) ;
+}
+body {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .very-specific-design {
+    width: 800px;
+    height:auto;
+    /* padding: 50px; */
+    text-align: center;
+    background: white;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+    position: relative;
+    transition: all 500ms ease-in-out !important;
+  }
+  
+  .scaleable-wrapper {
+    padding: 0px;
+    resize: both;
+    position: relative;
+    /* background: #666; */
+    height: 600px;
+  }
+  
+  .ui-resizable-se {
+    width: 10px;
+    height: 10px;
+    background: orange;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .bigred {
+    color: red;
+    font-size: 5rem;
+  }
+  .cart{
+    width: 100%;
+    height: 20em;
+    z-index: 0;
+
+  }
+  @keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  .wrong-icon {
+      opacity:1;  
+      animation: flickerAnimation .5s infinite;
+  }
+.popup{
+  display: none;
+}
+  .help_box,.resourse_box{
+    width: 95%;
+    margin: auto;
+    border: 3px solid #f5821f;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    height: 540px;
+    position: absolute;
+    top: -10px;
+    left: 2%;
+    z-index: 999;
+    text-align: left;
+
+  }
+  .help_box h1{
+    padding: 10px;
+    font-weight: 100;
+  }
+  .resourse_box > img{
+    width: 100%;
+  }
+  .help_box span img, 
+  .resourse_box span img{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 768px) {
+    .scaleable-wrapper{
+      width: 100% !important;
+    }
+  }
