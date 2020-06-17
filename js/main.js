@@ -93,7 +93,7 @@
                 $(`.items-answers > div:eq(${i})`).text( correctValue ) .addClass("added");
                 $("[data-answer='correct']").css("visibility" , "hidden");
             }
-            console.log(carriedItem)
+            
         } );
 
 
@@ -109,7 +109,6 @@
             specificHeight = $(".very-specific-design .header").innerHeight() ,
             boxHeight =  $(".very-specific-design .box-container").innerHeight() ;
             
-            console.log( wrapHeight , specificHeight , boxHeight )
             $(".footer").height( wrapHeight - (specificHeight + boxHeight) )
 
         //show help dialog     
