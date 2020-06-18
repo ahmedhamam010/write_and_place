@@ -5,8 +5,10 @@
 
     $( function(){
 
+        console.log($(this).width() , $(this).height());
+
         //scale elements
-        resizeElements(false);
+        resizeElements();
 
         //items array
         var items = [
@@ -100,7 +102,7 @@
         //start resize window
         // scale elements on window resize
         $(window).resize( function(){
-           resizeElements(true);
+           resizeElements();
         } );
         //end resize window
 
@@ -139,8 +141,8 @@
 
     } );
 
-
-    function resizeElements(scalable = false){
+    
+    function resizeElements(){
         var CurrentWindowSize = $(this).height();
         var $el = $("#very-specific-design");
         var elHeight = $el.outerHeight();
@@ -149,13 +151,14 @@
         wrapper.css({'height':CurrentWindowSize+'px'});
         function doResize(ui) {
             var scale;
-           
-            if( scalable == true ){
-                scale = Math.min(ui.size.width / elWidth,ui.size.height / elHeight);
-               
-            } else{
-                scale = 1;
-            }
+            let temp;
+            
+                temp = Math.min(ui.size.width / elWidth,ui.size.height / elHeight);
+                if (temp > 1){
+                    scale = 1;
+                }else{
+                    scale = temp;
+                }
             $el.css({
                 transform: "translate(-50%, -50%) " + "scale(" + scale + ")"
                 });
@@ -169,8 +172,11 @@
         }
         
         doResize(starterData);
+        
     
     }
+    // $('#very-specific-design').css('transform', "translate(-50%, -50%) " + "scale(" + 1 + ")");
 
+   
 
    
